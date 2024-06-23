@@ -52,7 +52,7 @@ class Quiz:
         if type == 0:
             while True:
                 n = 1000 + getrandbits(16)
-                n += 1 if (n % 2 == 0) else 0  # No even numbers.
+                n += 1 if (n % 2 == 0) else 0 # No even numbers.
                 if is_prime(n) == answer:
                     return n
 
