@@ -1,4 +1,5 @@
 from os import system
+from string import ascii_uppercase
 from random import choice
 from hangman_art import logo, stages
 from hangman_words import word_list
@@ -26,8 +27,8 @@ while True:
 
     # Let the player guess a letter.
     print(f'{error}')
-    guess = input('Guess a letter: ').upper()
-    if len(guess) != 1:
+    guess = input('Guess a letter: ').upper().strip()
+    if len(guess) != 1 or guess not in ascii_uppercase:
         error = 'Please type one letter.'
         continue
     if guess in history:
