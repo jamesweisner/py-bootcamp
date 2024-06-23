@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "day-30-flashcards"
+name = "day-31-flashcards"
 version = "1.0.0"
 description = ""
-authors = [""]
+authors = ["James Weisner <james.weisner@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.12"
