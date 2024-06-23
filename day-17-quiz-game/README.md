@@ -1,7 +1,7 @@
 I made several noteworthy improvements to this capstone project:
 
 * It's a math quiz!
-* A hidden trick lets you impress your friends with a perfect score.
+* A **hidden trick** lets you impress your friends with a perfect score.
 * A much cleaner user interface.
 
 The quiz is 10 questions long and each question is of a random type:
@@ -15,8 +15,8 @@ Questions are randomized so that 50% of the time the answer is true.
 
 The hidden trick is easy:
 
- * If the highest place value digit is *even*, the answer is *true*.
- * If the highest place value digit is *odd*, the answer is *false*.
+ * If the highest place value digit is **even**, the answer is **true**.
+ * If the highest place value digit is **odd**, the answer is **false**.
 
 The algorithm I wrote to accomplish this treachery is:
 
