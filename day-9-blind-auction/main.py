@@ -1,6 +1,8 @@
 from random import choices
 from os import system, name as os_name
 from json import load
+from pygame import mixer
+from time import sleep
 
 def snazzy_input(prompt, retry, filter=lambda r: r.strip(), checker=lambda r: True):
     while True:
@@ -10,6 +12,12 @@ def snazzy_input(prompt, retry, filter=lambda r: r.strip(), checker=lambda r: Tr
             return response
         except Exception:
             print(retry)
+
+# Gotta have that auction house music!
+mixer.init()
+mixer.music.set_volume(0.5)
+mixer.music.load('music.mid')
+mixer.music.play()
 
 # Separate code & data with auction items stored in JSON format.
 with open('items.json') as file:
@@ -65,3 +73,7 @@ if item['bid'] is None or item['bid'] > highest:
     winner = 'Kefka'
 
 print(f"The winner is {winner} with a bid of {highest:,}!")
+
+mixer.music.fadeout(1000)
+sleep(1)
+mixer.music.stop()
