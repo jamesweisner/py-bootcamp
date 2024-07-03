@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Angel Wings",
+        "bid": 10000,
+        "weight": 0.5
+    },
+    {
+        "name": "Talking Chocobo",
+        "bid": null,
+        "weight": 0.25
+    },
+    {
+        "name": "Golem",
+        "bid": 20000,
+        "weight": 0.125
+    },
+    {
+        "name": "Zoneseek",
+        "bid": 10000,
+        "weight": 0.0625
+    },
+    {
+        "name": "Angel Ring",
+        "bid": 20000,
+        "weight": 0.0625
+    }
+]
