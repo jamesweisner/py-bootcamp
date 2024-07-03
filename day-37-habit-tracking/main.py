@@ -45,5 +45,5 @@ except KeyboardInterrupt:
 
 url = pixela.get_url()
 call(["open", url])
-print("Done!")
+print("\nDone!\n")
 print(url)
