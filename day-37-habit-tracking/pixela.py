@@ -25,7 +25,7 @@ class Pixela:
 			self.post(f"/{self.username}/graphs", {
 				"id": "steps",
 				"name": "Step Counter",
-				"unit": "step",
+				"unit": "steps",
 				"type": "int",
 				"color": "sora",
 			})
